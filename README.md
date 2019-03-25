@@ -27,3 +27,10 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Deploy
+
+```
+yarn run build
+gcloud --project={{project_id}} app deploy
+```
