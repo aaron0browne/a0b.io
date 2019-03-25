@@ -56,10 +56,10 @@ body:after{
 }
 
 #coming-soon {
-  top: 50%;
+  margin-top: 15vh;
   left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  transform: translate(-50%);
+  position: relative;
 }
 
 #logo {
@@ -89,6 +89,10 @@ body:after{
 
 #coming-soon p:first-of-type {
   margin-top: 4rem;
+}
+
+#coming-soon p:last-of-type {
+  margin-bottom: 4rem;
 }
 
 #coming-soon p {
