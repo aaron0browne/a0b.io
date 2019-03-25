@@ -24,12 +24,31 @@
 </template>
 
 <style>
-html {
+body {
   background: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
     url(assets/phl-skyline.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body:after{
+  content: "";
+  position: fixed; /* stretch a fixed position to the whole screen */
+  top: 0;
+  height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+  left: 0;
+  right: 0;
+  z-index: -1; /* needed to keep in the background */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(assets/phl-skyline.jpg) center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
